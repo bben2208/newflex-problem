@@ -1,0 +1,221 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+margin: 0;
+padding:0;
+box-sizing: border-box;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Styling */
+#header {
+  display: flex;
+  justify-content: space-between; /* Ensure space between grouped sections */
+  align-items: center; /* Vertically align items */
+  padding: 10px 20px;
+  background-color: #6e7a8a; /* Background color */
+}
+
+/* Group links and center logo */
+.group-left {
+  display: flex; /* Group "Classes" and "Hire us" */
+  gap: 20px; /* Space between these two links */
+}
+
+/* Links Styling */
+#header a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Logo Styling */
+#header img {
+  max-height: 40px; /* Keep logo centered with similar height */
+}
+
+/* Donate button styling */
+#header #lastChild {
+  background-color: white;
+  color: #6e7a8a;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#mainSection  {
+  display: flex;
+  flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #6e7a8a;
+    color: aliceblue;
+    
+}
+
+#mainSection p  {
+  margin: 10px;
+  text-align: center;
+  padding: 10px;  
+  max-width: 600px; 
+}
+
+/* #secondSection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#secondSection p  {
+  margin: 10px;
+  text-align: center;
+  padding: 10px;   
+} */
+
+/* Centered Container Styling */
+.centeredContainer {
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  max-width: 600px; /* Constrain width */
+  margin: 0 auto; /* Center horizontally in the parent container */
+  padding: 20px; /* Add spacing around the container */
+  text-align: center; /* Center-align the text */
+}
+
+/* Heading Styling */
+.centeredContainer h2 {
+  font-size: 24px; /* Adjust size of the heading */
+  font-weight: bold; /* Make the heading bold */
+  margin-bottom: 10px; /* Add spacing below the heading */
+}
+
+/* Paragraph Styling */
+.centeredContainer p {
+  font-size: 16px; /* Adjust paragraph text size */
+  line-height: 1.6; /* Increase line spacing for readability */
+  color: #333; /* Set text color */
+}
+
+#thirdContainer{
+  display: flex;
+  justify-content: center; /* Center content vertically */
+  align-items: center;
+  text-align: center;
+  background-color: rgb(220, 223, 226);
+  padding: 40px;
+}
+
+#thirdContainer a{
+ background-color:rgb(220, 223, 226); ;
+  padding: 5px 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.8;
+  border: solid 1px;
+  border: color black;
+  color: black
+}
+
+#thirdContainer p{
+  max-width: 400px;
+}
+
+/* #fourthContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#fourthContainer p {
+  text-align: center;
+} */
+
+.centeredContainerAlmostBottom{
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  max-width: 600px; /* Narrower width for a focused layout */
+  margin: 0 auto; /* Center horizontally in parent */
+  padding: 20px; /* Add some spacing inside the container */
+  text-align: center; /* Center-align text */
+}
+.centeredContainerAlmostBottom h2{
+  font-size: 18px; /* Smaller font size for the heading */
+  font-weight: bold; /* Keep the heading bold */
+  margin-bottom: 12px; /* Add some spacing below the heading */
+}
+.centeredContainerAlmostBottom p{
+  font-size: 14px; /* Smaller font size for the paragraph */
+  line-height: 1.4; /* Adjust line spacing for readability */
+  color: #555; /* Slightly lighter text color */
+}
+#lastContainer {
+  background-color: rgb(24, 31, 41);
+ color: white;
+ display: flex;
+    
+}
+li{
+  list-style: none;
+  flex-direction: row;
+}
+.icons{
+  flex-direction: row;
+}
+
+#rightContainer #leftContainer{
+justify-content: space-between !important;
+}
+ 
+#rightContainer .jobbAlso{
+  justify-content: end;
+}
+
+
+
+
+
+
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
