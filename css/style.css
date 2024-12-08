@@ -5,16 +5,16 @@
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: '.';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 /******************************************
@@ -22,20 +22,33 @@
 /*******************************************/
 
 body {
-margin: 0;
-padding:0;
-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 
 /******************************************
 /* LAYOUT
 /*******************************************/
 /* General Reset */
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
 }
 
 /* Header Styling */
@@ -75,22 +88,22 @@ body, html {
   text-transform: uppercase;
 }
 
-#mainSection  {
+#mainSection {
   display: flex;
   flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: #6e7a8a;
-    color: aliceblue;
-    
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #6e7a8a;
+  color: aliceblue;
+  min-height: 70vh;
 }
 
-#mainSection p  {
+#mainSection p {
   margin: 10px;
   text-align: center;
-  padding: 10px;  
-  max-width: 600px; 
+  padding: 10px;
+  max-width: 600px;
 }
 
 /* #secondSection{
@@ -131,7 +144,7 @@ body, html {
   color: #333; /* Set text color */
 }
 
-#thirdContainer{
+#thirdContainer {
   display: flex;
   justify-content: center; /* Center content vertically */
   align-items: center;
@@ -140,18 +153,18 @@ body, html {
   padding: 40px;
 }
 
-#thirdContainer a{
- background-color:rgb(220, 223, 226); ;
+#thirdContainer a {
+  background-color: rgb(220, 223, 226);
   padding: 5px 10px;
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.8;
   border: solid 1px;
   border: color black;
-  color: black
+  color: black;
 }
 
-#thirdContainer p{
+#thirdContainer p {
   max-width: 400px;
 }
 
@@ -165,7 +178,7 @@ body, html {
   text-align: center;
 } */
 
-.centeredContainerAlmostBottom{
+.centeredContainerAlmostBottom {
   display: flex;
   flex-direction: column; /* Stack content vertically */
   justify-content: center; /* Center vertically */
@@ -175,46 +188,60 @@ body, html {
   padding: 20px; /* Add some spacing inside the container */
   text-align: center; /* Center-align text */
 }
-.centeredContainerAlmostBottom h2{
+.centeredContainerAlmostBottom h2 {
   font-size: 18px; /* Smaller font size for the heading */
   font-weight: bold; /* Keep the heading bold */
   margin-bottom: 12px; /* Add some spacing below the heading */
 }
-.centeredContainerAlmostBottom p{
+.centeredContainerAlmostBottom p {
   font-size: 14px; /* Smaller font size for the paragraph */
   line-height: 1.4; /* Adjust line spacing for readability */
   color: #555; /* Slightly lighter text color */
 }
 #lastContainer {
   background-color: rgb(24, 31, 41);
- color: white;
- display: flex;
-    
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-bottom: white 1px solid;
 }
-li{
+li {
   list-style: none;
-  flex-direction: row;
 }
-.icons{
+.footer-list {
+  display: flex;
+  gap: 10px;
+  padding: 0;
+}
+a {
+  color: white;
+}
+.icons {
+  display: flex;
   flex-direction: row;
+  gap: 10px;
+  padding: 0;
+  padding-bottom: 1rem;
 }
 
-#rightContainer #leftContainer{
-justify-content: space-between !important;
+#rightContainer #leftContainer {
+  justify-content: space-between !important;
 }
- 
-#rightContainer .jobbAlso{
+
+#rightContainer .jobbAlso {
   justify-content: end;
 }
 
+.siteMap {
+  padding-bottom: 1rem;
+}
 
-
-
-
-
-
-
-
+.footer-note {
+  background-color: rgb(24, 31, 41);
+  color: white;
+  padding: 1rem 2rem;
+}
 
 /******************************************
 /* ADDITIONAL STYLES
